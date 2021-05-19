@@ -57,8 +57,11 @@ function checkYuGiOh(n) {
         }
 
     }
-    if (isNaN(n)===true) {
+    if (typeof n==="object") {
         return console.log(`invalid parameter: ${JSON.stringify(n)}`) 
+    }
+    else if (isNaN(n)===true) {
+        return console.log(`invalid parameter: ${n}`) 
     }
     else if (typeof n === "number") {
         return console.log(arr)
