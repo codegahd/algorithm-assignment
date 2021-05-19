@@ -77,8 +77,8 @@ function checkYuGiOh(n) {
     }
 };
 
-convertFahrToCelsius(NaN)
+convertFahrToCelsius()
 
- checkYuGiOh("")
+ checkYuGiOh()
 
 
