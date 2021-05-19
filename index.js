@@ -2,10 +2,8 @@
 
 function convertFahrToCelsius(f) {
     const c = (f - 32) * (5 / 9);
-    if (isNaN(f) === true) {
-       return console.log( (`${JSON.stringify(f)} is not a number but a/an ${typeof f}`))
-    }
-    else if (typeof f === "number") {
+    
+    if (typeof f === "number") {
        return console.log(c.toFixed(4))
 
     }
@@ -60,7 +58,7 @@ function checkYuGiOh(n) {
 
     }
     if (isNaN(n)===true) {
-        return console.log(`invalid parameter: ${n}`) 
+        return console.log(`invalid parameter: ${JSON.stringify(n)}`) 
     }
     else if (typeof n === "number") {
         return console.log(arr)
@@ -71,14 +69,15 @@ function checkYuGiOh(n) {
     else if (typeof n === "string" && isNaN(n) !== true) {
         return console.log(arr)
     }
-    else {
-        return console.log(`invalid parameter: ${n}`) 
+    else  {
+        return console.log (`invalid parameter: ${(n)}`)
     
     }
 };
 
 convertFahrToCelsius()
+checkYuGiOh()
 
- checkYuGiOh()
+ 
 
 
